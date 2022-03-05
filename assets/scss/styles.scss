@@ -1,0 +1,39 @@
+@import "config";
+@import "button-config";
+@import "typo";
+
+
+/* Name*/
+
+.logo-name {
+   font-size: 1.5rem;
+}
+
+
+
+/*Counter Number */
+.count-number {
+   margin-top:  8vh;
+
+   font-size: 10rem;
+}
+
+/*Score*/
+
+.score {
+   margin-top: 3vh;
+   font-size: 1.8rem;
+}
+
+/*Footer*/
+
+.credits {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1;
+}
+
+
+@import "mobile";

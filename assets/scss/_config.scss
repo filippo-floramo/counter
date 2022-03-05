@@ -1,0 +1,29 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   
+   font-family: sans-serif;
+   text-align: center;
+   background-color: #192E40;
+   
+}
+
+.container {
+   margin: 0 auto;
+   margin-top: 50px;
+   width: 100%;
+}
+
+.wrapper {
+   width: 800px;
+   margin: 0 auto;
+   width: 60%;
+   padding-top: 30px;
+   background-color: #324E59;
+   border-radius: 6px;
+   box-shadow: 0 2px 30px -15px rgb(15, 15, 15);
+}

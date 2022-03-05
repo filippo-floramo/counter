@@ -1,0 +1,43 @@
+ .buttons {
+   display: flex;
+   justify-content: center;
+   margin-top: 12vh;
+   
+
+
+   .btn {
+      height: 150px;
+      flex: 1;
+      position: relative;
+   
+      
+   }
+   
+
+   .plus {
+      border-top: 5px solid #0BBF7D;
+      border-left: 5px solid #0BBF7D;
+      
+   }
+
+   .minus {
+      border-top: 5px solid #0BBF7D;
+      border-right: 5px solid #0BBF7D;
+
+   }
+
+
+   .reset {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .reset-icon {
+      height: 60px;
+      }
+
+      .save {
+         margin-top: 7px;
+      }
+   }
+ }
