@@ -20,7 +20,7 @@ function resetSave() {
    score.textContent = results;
 
    count = 0;
-   countEl.textContent = 0;
+   countEl.textContent = count;
 }
 
 plus.addEventListener("click", increment);
