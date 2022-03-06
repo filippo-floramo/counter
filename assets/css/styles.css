@@ -85,7 +85,7 @@ body {
   background: none;
   color: white;
   font-size: 6em;
-  padding: 16px 80px;
+  padding: 16px 60px;
   cursor: pointer;
 }
 
@@ -178,6 +178,9 @@ body {
   }
   .container .wrapper {
     width: 100%;
+  }
+  .buttons .bt {
+    padding: 0px 0px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
