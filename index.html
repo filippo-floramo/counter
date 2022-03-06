@@ -22,22 +22,22 @@
     <!-- Count Number-->
       
          <section class="count">
-            <h1 class="count-number">0</h1>
+            <h1 id="count-num" class="count-number"></h1>
          </section>
 
     <!--Saved Count Score-->    
          <section class="score">
-            <p id="score-count">Previous count: 96</p>
+            <p id="score-count"></p>
          </section>
 
     <!-- Buttons-->
          <section class="buttons">
-            <div class="minus btn">-</div>
-            <div class="reset btn">
+            <div  id="decr" class="minus btn"></div>
+            <div id="reset" class="reset btn">
                <img class="reset-icon" src="assets/img/reset.svg" alt="Reset">
                <p class="save">Save/Reset</p>
             </div>
-            <div class="plus btn">+</div>
+            <div id="incr" class="plus btn"></div>
          </section>
      </div> 
 
@@ -65,6 +65,7 @@
  
  
  
-   <script src="assets/js/index.js"></script>
+   <script src="assets/js/main.js"></script>
+   <script src="assets/js/btnEvents.js"></script>
 </body>
 </html>

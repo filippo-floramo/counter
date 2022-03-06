@@ -1,43 +1,31 @@
- .buttons {
-   display: flex;
-   justify-content: center;
-   margin-top: 12vh;
+
+
+.btn:hover {
+
+   cursor: pointer;
+
+   .bt {
+      color: #0BBF7D;
+      transform: scale(1.15);
+      transition-duration: 0.15s;
+   }
+
+   .reset-icon {
+      transform: scale(1.15);
+      transition-duration: 0.15s;
+   }
+}
+
+.btn:active {
    
-
-
-   .btn {
-      height: 150px;
-      flex: 1;
-      position: relative;
-   
-      
-   }
-   
-
-   .plus {
-      border-top: 5px solid #0BBF7D;
-      border-left: 5px solid #0BBF7D;
-      
+   .bt {
+      color: #0BBF7D;
+      transform: scale(.95);
+      transition-duration: 0.15s;
    }
 
-   .minus {
-      border-top: 5px solid #0BBF7D;
-      border-right: 5px solid #0BBF7D;
-
+   .reset-icon {
+      transform: scale(.95);
+      transition-duration: 0.15s;
    }
-
-
-   .reset {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-      .reset-icon {
-      height: 60px;
-      }
-
-      .save {
-         margin-top: 7px;
-      }
-   }
- }
+}
