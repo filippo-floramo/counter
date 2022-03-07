@@ -1,8 +1,10 @@
 
 /*Setting elementss and the Count Number to 0*/
 
-let countEl = document.querySelector("#count-num");
+let nameCounter = document.querySelector("#editable");
+nameCounter.contentEditable = "true";
 
+let countEl = document.querySelector("#count-num");
 countEl.textContent = 0;
 
 let score = document.querySelector("#score-count");
@@ -11,10 +13,8 @@ let reset = document.querySelector("#reset")
 
 
 
-
 /*Creating Plus Button*/
 let plus = document.querySelector("#incr");
-
 
 let plusBtn = document.createElement("button");
 plusBtn.textContent = "+";

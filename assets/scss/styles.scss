@@ -9,9 +9,11 @@
 
 .logo-name {
    font-size: 1.5rem;
+
+   #editable {
+      display: inline;
+   }
 }
-
-
 
 /*Counter Number */
 .count-number {
@@ -35,6 +37,7 @@
    left: 0;
    width: 100%;
    z-index: 1;
+   background-color: #324E59;
 }
 
 

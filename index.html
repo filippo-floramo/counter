@@ -4,19 +4,19 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="assets/css/styles.css">
 
-   <title>Online counter</title>
+   <link rel="icon" href="assets/img/favicon.svg">
+   <title>Free Online Counter</title>
 </head>
 <body>
-   
-   
-   <div class="container">
-      
+
+   <div class="container">  
      <div class="wrapper">
     <!--Counter Name-->
          <nav class="logo-name">
-            <h1>Free Online Counter</h1>
+            <h1 id="editable">Your Counter's Name</h1>
          </nav>
 
     <!-- Count Number-->
@@ -25,12 +25,14 @@
             <h1 id="count-num" class="count-number"></h1>
          </section>
 
-    <!--Saved Count Score-->    
+    <!--Saved Count Score-->   
+
          <section class="score">
             <p id="score-count"></p>
          </section>
 
     <!-- Buttons-->
+
          <section class="buttons">
             <div  id="decr" class="minus btn"></div>
             <div id="reset" class="reset btn">
@@ -40,31 +42,15 @@
             <div id="incr" class="plus btn"></div>
          </section>
      </div> 
-
    </div>
 
    <!--Footer-->
    <footer class="credits">
       <span>
-      Made with passion by Filippo Floramo
+      Made by <a class="reference" href="https://filippo-floramo.github.io/">Filippo Floramo</a>
       </span>
    </footer>
 
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
    <script src="assets/js/main.js"></script>
    <script src="assets/js/btnEvents.js"></script>
 </body>

@@ -77,7 +77,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  position: relative;
 }
 
 .buttons .bt {
@@ -138,8 +137,14 @@ body {
   margin-top: 7px;
 }
 
+.reference {
+  text-decoration: none;
+  color: white;
+}
+
 body {
   color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
 .count-number {
@@ -149,6 +154,10 @@ body {
 /* Name*/
 .logo-name {
   font-size: 1.5rem;
+}
+
+.logo-name #editable {
+  display: inline;
 }
 
 /*Counter Number */
@@ -170,6 +179,7 @@ body {
   left: 0;
   width: 100%;
   z-index: 1;
+  background-color: #324E59;
 }
 
 @media (max-width: 1250px) {
