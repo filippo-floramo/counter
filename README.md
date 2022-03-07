@@ -2,7 +2,7 @@
 This project is built with HTML5, SCSS and JS.
 This is my first project that implements javascript.
 
-You can find it here: 
+You can find it here: https://freeonlinecounter.netlify.app/
 
 It is a modern designed online counter with some features in it such as:
 - Editable counter's name.
