@@ -13,7 +13,7 @@ body {
 
 .container {
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 20px;
   width: 100%;
 }
 
@@ -69,7 +69,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 12vh;
+  margin-top: 3vh;
 }
 
 .buttons .btn {
@@ -170,6 +170,7 @@ body {
 .score {
   margin-top: 3vh;
   font-size: 1.8rem;
+  height: 50px;
 }
 
 /*Footer*/
@@ -184,13 +185,24 @@ body {
 
 @media (max-width: 1250px) {
   .container {
-    margin-top: 15px;
+    margin-top: 0;
   }
   .container .wrapper {
     width: 100%;
   }
   .buttons .bt {
     padding: 0px 0px;
+  }
+  .buttons .btn {
+    height: 150px;
+  }
+  .btn:hover .bt {
+    -webkit-transform: none;
+            transform: none;
+  }
+  .btn:hover .reset-icon {
+    -webkit-transform: none;
+            transform: none;
   }
 }
 /*# sourceMappingURL=styles.css.map */
