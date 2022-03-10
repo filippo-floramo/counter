@@ -1,5 +1,5 @@
 
-let count = 0 
+let count = 0;
 
 function increment() {
 
@@ -9,7 +9,9 @@ function increment() {
 
 function decrement() {
 
-    count == 0 ? 0 : count--;
+    if (count > 0){
+        count--;
+    }
     countEl.textContent = count;
 }
 
