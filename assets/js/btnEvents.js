@@ -9,9 +9,8 @@ function increment() {
 
 function decrement() {
 
-    if (count > 0){
-        count--;
-    }
+    if (count > 0) count--;
+    
     countEl.textContent = count;
 }
 
