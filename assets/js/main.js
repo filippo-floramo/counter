@@ -1,6 +1,8 @@
 
 /*Setting elementss and the Count Number to 0*/
 
+
+
 let nameCounter = document.querySelector("#editable");
 nameCounter.contentEditable = "true";
 
@@ -37,39 +39,34 @@ minus.appendChild(minusBtn);
 
 /* Creating Handling Functions */
 
-let count = 0;
 
-function increment() {
-
-    count++;
-    countEl.textContent = count;
-}
-
-function decrement() {
-
-    if (count > 0) count--;
+const handleCounter = () => {
     
-    countEl.textContent = count;
-}
+    let count = 0;
 
-function resetSave() {
-    let results = "Previous count: " + count;
+    const updateCounter = (num) => {
 
-    score.textContent = results;
+        if (count >= 0) count += num;
+        if (count < 0) count = 0;
+        countEl.textContent = count;
+    }
 
-    count = 0;
-    countEl.textContent = count;
-} 
+    const resetSave = () => {
+        let results = "Previous count: " + count;
 
+        score.textContent = results;
 
+        count = 0;
+        countEl.textContent = count;
+    }
 
+    plus.addEventListener("click", () => updateCounter(1));
+    minus.addEventListener("click", () => updateCounter(-1));
+    reset.addEventListener("click", resetSave);
 
-plus.addEventListener("click", increment);
-minus.addEventListener("click", decrement);
-reset.addEventListener("click", resetSave);
+};
 
-
-
+handleCounter();
 
 
 
