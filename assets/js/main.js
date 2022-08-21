@@ -35,38 +35,38 @@ minus.appendChild(minusBtn);
 
 
 
-/* Creating Handling Functions */
+/* Creating Handling Class */
 
-let count = 0;
+class Counter  {
 
-function increment() {
+    constructor() {
+        this.counterCount = 0
+    }
 
-    count++;
-    countEl.textContent = count;
-}
+    updateTimer(num) {
+      if(this.counterCount >= 0)  this.counterCount += num;
+      if(this.counterCount < 0) this.counterCount = 0;
 
-function decrement() {
+      countEl.textContent = this.counterCount;
+    }
 
-    if (count > 0) count--;
+    resetSave() {
+        let results = "Previous count: " + this.counterCount;
     
-    countEl.textContent = count;
+        score.textContent = results;
+    
+        this.counterCount = 0;
+        countEl.textContent = this.counterCount;
+    } 
+
 }
 
-function resetSave() {
-    let results = "Previous count: " + count;
-
-    score.textContent = results;
-
-    count = 0;
-    countEl.textContent = count;
-} 
+const handleCounter = new Counter()
 
 
-
-
-plus.addEventListener("click", increment);
-minus.addEventListener("click", decrement);
-reset.addEventListener("click", resetSave);
+plus.addEventListener("click", () => handleCounter.updateTimer(1));
+minus.addEventListener("click", () => handleCounter.updateTimer(-1));
+reset.addEventListener("click", () => handleCounter.resetSave());
 
 
 
